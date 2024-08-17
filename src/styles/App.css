@@ -1,0 +1,375 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.unline {
+  text-decoration: none;
+  color: blue;
+}
+/* Header Start*/  
+header {
+  background-color: #333; 
+  padding: 25px 0; 
+}
+
+nav {
+  display: flex; 
+  justify-content: center; 
+}
+
+.navMenu {
+  display: flex; 
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.navMenu li {
+  margin: 0 15px; 
+}
+
+.navMenu a {
+  text-decoration: none; 
+  color: #fff; 
+  font-size: 16px; 
+  transition: color 0.3s; 
+}
+
+.navMenu a:hover {
+  color: #007bff; 
+}
+/* Header End*/  
+
+/* Products Start*/  
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+  justify-items: center;
+  width: 100%;
+}
+
+.list-container {
+  width: 300px; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s, box-shadow 0.3s; 
+  text-align: center; 
+  padding: 16px; 
+}
+
+.cards {
+  border: 1px solid #ddd; 
+  width: 300px;
+  border-radius: 12px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  background-color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s; 
+  text-align: center; 
+  padding: 16px; 
+}
+
+.cards:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cards img {
+  width: auto;
+  height: 150px;
+}
+
+.cards h2 {
+  font-size: 16px; 
+  margin: 10px 0; 
+  color: #333;
+}
+
+.cards p {
+  font-size: 1.2em; 
+  color: #4CAF50; 
+  margin: 10px 0; 
+}
+
+.cards .unline {
+  text-decoration: none; 
+  color: #2196F3; 
+  font-weight: bold; 
+  display: inline-block; 
+  margin-top: 10px; 
+  transition: color 0.3s; 
+}
+
+.cards .unline:hover {
+  color: #1976D2; 
+}
+/* Products End*/ 
+
+/* Button for list */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid #007bff;
+  background-color: white;
+  color: #007bff;
+  transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+}
+
+.button-container button:hover {
+  background-color: #007bff;
+  border-color: black;
+  border-radius: 10px;
+  color: white;
+}
+
+.showContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.showContainer button {
+  background-color: #4CAF50;
+  color: white; 
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 4px; 
+  transition: background-color 0.3s, transform 0.2s; 
+}
+
+.showContainer button:hover {
+  background-color: #45a049; 
+}
+
+.showContainer button:active {
+  transform: scale(0.95); 
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 30px 0 30px 0;
+  text-align: left;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.edButton {
+  background-color: #2196F3; 
+  color: white; 
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 4px; 
+  transition: background-color 0.3s, transform 0.2s; 
+}
+
+.edButton:hover {
+  background-color: #1976D2; 
+}
+
+.showContainer button.delButton {
+  background-color: #f44336; 
+}
+
+.showContainer button.delButton:hover {
+  background-color: #d32f2f; 
+}
+/* Button for list */
+
+/* Card Details Start */
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; 
+  padding: 20px;
+}
+
+.card {
+  display: flex; 
+  border: 2px solid #ddd; 
+  border-radius: 12px; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  overflow: hidden; 
+  width: 80%; 
+  max-width: 800px;
+  margin: 20px;
+  background-color: #fff; 
+  transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
+}
+
+.card-img {
+  width: 300px;
+  height: 300px; 
+  object-fit: cover; 
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  padding: 20px; 
+  flex: 1;
+}
+
+.card-title {
+  font-size: 2em;
+  margin: 0 0 10px; 
+  color: #333; 
+  overflow-wrap: break-word; 
+}
+
+.card-price {
+  font-size: 1.5em; 
+  color: #4CAF50;
+  margin: 0 0 10px; 
+}
+
+.card-description {
+  font-size: 1.2em;
+  color: #666; 
+  margin: 0;
+}
+/* Card Details End */
+
+/* Create and Update */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  margin-top: 250px;
+  box-sizing: border-box; 
+}
+
+form {
+  background-color: #fff; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 20px; 
+  max-width: 500px; 
+  width: 100%; 
+}
+
+input, textarea {
+  width: 100%; 
+  padding: 10px; 
+  margin-bottom: 15px;
+  border: 1px solid #ddd; 
+  border-radius: 4px; 
+  font-size: 1em; 
+}
+
+textarea {
+  resize: vertical; 
+  min-height: 100px; 
+}
+
+label {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 15px; 
+}
+
+label input {
+  margin-left: 10px; 
+}
+
+form button {
+  background-color: #007bff; 
+  color: #fff; 
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px; 
+  font-size: 1em;
+  cursor: pointer; 
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3; 
+}
+
+.checkbox-container input {
+  margin: 0;
+}
+/* Create and Update */
+
+/* Search input */
+.searchContainer {
+  display: flex;
+  justify-content: center; 
+  place-items: center;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.searchInput:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+.searchInput::placeholder {
+  color: #999;
+  opacity: 1;
+}
+/* Search input */
